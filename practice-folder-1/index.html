@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header
+      class="flex items-center justify-between bg-gray-900 p-4 text-white"
+    >
+      <h1 class="text-xl font-bold italic">DevNest</h1>
+
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-blue-400">Home</a>
+        <a href="#" class="rounded bg-blue-600 px-4 py-1">Login</a>
+      </div>
+    </header>
+    <section
+      class="flex h-96 flex-col items-center justify-center border-b bg-slate-50"
+    >
+      <h1 class="mb-2 text-4xl font-extrabold text-slate-900">
+        Welcome to DevNest
+      </h1>
+
+      <p class="mb-6 text-lg text-slate-600">
+        A place for developers to share thoughts.
+      </p>
+
+      <button
+        class="rounded-full bg-indigo-600 px-8 py-3 font-semibold text-white transition hover:shadow-lg"
+      >
+        Start Writing
+      </button>
+    </section>
+    <div class="grid grid-cols-1 gap-8 p-10 md:grid-cols-3">
+      <div class="rounded bg-white p-4 shadow">Post 1</div>
+      <div class="rounded bg-white p-4 shadow">Post 2</div>
+      <div class="rounded bg-white p-4 shadow">Post 3</div>
+      <div class="rounded bg-white p-4 shadow">Post 4...</div>
+    </div>
+    <div class="relative w-64 rounded-lg border bg-white p-6">
+      <span
+        class="absolute -top-2 -right-2 rounded bg-red-500 px-2 py-1 text-xs text-white"
+      >
+        NEW
+      </span>
+
+      <h2 class="font-bold">Understanding CSS Positions</h2>
+      <p class="text-gray-600">Learning absolute vs relative...</p>
+    </div>
+    <div
+      class="relative w-80 overflow-hidden rounded-2xl border bg-white shadow-md transition-all hover:shadow-xl"
+    >
+      <span
+        class="absolute top-3 left-3 z-10 rounded-full bg-indigo-600 px-3 py-1 text-xs font-bold text-white"
+      >
+        React
+      </span>
+
+      <img
+        src="https://via.placeholder.com/400x250"
+        alt="Blog cover"
+        class="h-48 w-full object-cover"
+      />
+
+      <div class="flex h-40 flex-col justify-between p-5">
+        <div>
+          <h3 class="line-clamp-2 text-xl font-bold text-gray-800">
+            Understanding the MERN Stack in 2026
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">By You • 2 mins read</p>
+        </div>
+
+        <a
+          href="#"
+          class="flex items-center text-sm font-semibold text-indigo-600 hover:underline"
+        >
+          Read More →
+        </a>
+      </div>
+    </div>
+
+    <div class="flex min-h-screen w-full items-center justify-center">
+      <div
+        class="flex w-full max-w-md flex-col items-center gap-y-4 rounded-2xl border bg-gray-100 p-10 shadow-xl"
+      >
+        <div>
+          <label for="email">Email</label>
+          <input type="text" class="border" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" class="border" />
+        </div>
+        <div>
+          <button
+            class="rounded-xl border bg-emerald-600 px-4 py-2 text-white shadow-md hover:bg-emerald-700"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- another example -->
+    <div
+      class="flex min-h-screen w-full items-center justify-center bg-gray-50"
+    >
+      <div
+        class="flex w-full max-w-md flex-col gap-y-6 rounded-2xl border bg-white p-10 shadow-xl"
+      >
+        <h2 class="text-center text-2xl font-bold text-gray-800">Login</h2>
+
+        <div class="flex flex-col gap-y-2">
+          <label for="email" class="text-sm font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            type="text"
+            id="email"
+            class="w-full rounded-lg border border-gray-300 p-2 outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        <div class="flex flex-col gap-y-2">
+          <label for="password" class="text-sm font-medium text-gray-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="w-full rounded-lg border border-gray-300 p-2 outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        <button
+          class="w-full rounded-xl bg-emerald-600 py-3 font-semibold text-white shadow-md transition-colors hover:bg-emerald-700"
+        >
+          Sign In
+        </button>
+      </div>
+    </div>
+
+    <!-- navbar -->
+
+    <nav class="flex items-center justify-between bg-black p-4 text-white">
+      <div class="font-semibold">DevNest</div>
+      <div class="flex items-center gap-x-8">
+        <span class="cursor-pointer hover:font-medium hover:underline"
+          >Home</span
+        >
+        <span class="cursor-pointer hover:font-medium hover:underline"
+          >About Us</span
+        >
+        <span class="cursor-pointer hover:font-medium hover:underline"
+          >Contact Us</span
+        >
+        <button
+          class="rounded-lg bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700"
+        >
+          Sign up
+        </button>
+      </div>
+    </nav>
+
+    <!-- Home page -->
+    <section
+      class="flex h-96 min-h-[70vh] w-full flex-col items-center justify-center"
+    >
+      <div class="flex max-w-md flex-col items-center gap-y-3 text-center">
+        <h1 class="text-center text-3xl font-bold md:text-5xl">
+          Welcome to DevNest
+        </h1>
+        <h3 class="text-gray-600">
+          A Blogging Platform to create blogs to help more and more people to
+          get knowledge
+        </h3>
+        <button
+          class="rounded-lg bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+
+    <!-- sign up page -->
+
+    <div
+      class="m-2 flex min-h-screen items-center justify-center bg-gray-100 p-4"
+    >
+      <div
+        class="flex w-full max-w-md flex-col gap-y-4 rounded-2xl bg-white p-6 shadow-xl md:p-10"
+      >
+        <h2 class="text-center text-2xl font-bold md:text-3xl">Sign Up</h2>
+        <div class="flex w-full flex-col">
+          <label for="fullname">FullName</label>
+          <input
+            type="text"
+            class="rounded-lg border border-gray-300 p-2 outline-none focus:ring-2 focus:ring-emerald-600"
+          />
+        </div>
+        <div class="flex w-full flex-col">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            class="rounded-lg border border-gray-300 p-2 outline-none focus:ring-2 focus:ring-emerald-600"
+          />
+        </div>
+        <div class="flex w-full flex-col">
+          <label for="password">Password</label>
+          <input
+            type="text"
+            class="rounded-lg border border-gray-300 p-2 outline-none focus:ring-2 focus:ring-emerald-600"
+          />
+        </div>
+        <button
+          class="w-full rounded-md bg-emerald-600 py-2 text-white shadow-md hover:bg-emerald-700"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <!-- responsive navbar -->
+    <nav
+      class="flex flex-col items-center justify-between bg-black p-4 text-white md:flex-row"
+    >
+      <div class="font-bold">DevNest</div>
+
+      <div class="mt-4 flex items-center gap-4 md:mt-0">
+        <span>Home</span>
+        <span>About</span>
+        <button class="rounded bg-emerald-600 px-3 py-1">Sign Up</button>
+      </div>
+    </nav>
+
+    <!-- all posts  -->
+
+    <div class="bg-gray-50 p-8">
+      <h2 class="mb-8 text-3xl font-bold">Latest Blogs</h2>
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-xl border border-gray-100 bg-white p-6 shadow-md">
+          <div class="mb-4 h-40 rounded-lg bg-gray-200"></div>
+          <h3 class="text-xl font-bold">Mastering React Hooks</h3>
+          <p class="mt-2 text-gray-600">
+            Learn how to use useEffect like a pro...
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-gray-100 bg-white p-6 shadow-md">
+          <div class="mb-4 h-40 rounded-lg bg-gray-200"></div>
+          <h3 class="text-xl font-bold">Backend vs Frontend</h3>
+          <p class="mt-2 text-gray-600">Which one should you choose in 2026?</p>
+        </div>
+
+        <div class="rounded-xl border border-gray-100 bg-white p-6 shadow-md">
+          <div class="mb-4 h-40 rounded-lg bg-gray-200"></div>
+          <h3 class="text-xl font-bold">Tailwind Tips</h3>
+          <p class="mt-2 text-gray-600">Stop using margins for everything!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="min-h-screen bg-gray-50">
+      <nav
+        class="flex flex-col items-center justify-between bg-black p-4 text-white md:flex-row"
+      >
+        <div class="text-xl font-bold text-emerald-500">DevNest</div>
+        <div class="mt-4 flex gap-x-6 md:mt-0">
+          <span class="cursor-pointer hover:text-emerald-400">Home</span>
+          <span class="cursor-pointer hover:text-emerald-400">Blogs</span>
+          <button
+            class="rounded-lg bg-emerald-600 px-4 py-1 hover:bg-emerald-700"
+          >
+            Login
+          </button>
+        </div>
+      </nav>
+
+      <header
+        class="flex flex-col items-center justify-center border-b bg-white px-4 py-20 text-center"
+      >
+        <h1 class="text-4xl font-black text-gray-900 md:text-6xl">
+          Share Your Knowledge
+        </h1>
+        <p class="mt-4 max-w-xl text-lg text-gray-600">
+          The community-driven platform for MERN stack developers.
+        </p>
+        <button
+          class="mt-8 rounded-full bg-emerald-600 px-10 py-4 font-bold text-white shadow-lg"
+        >
+          Get Started
+        </button>
+      </header>
+
+      <main class="mx-auto max-w-7xl p-8">
+        <h2 class="mb-8 text-2xl font-bold">Recent Stories</h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="h-64 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+          >
+            <div class="mb-4 h-12 w-12 rounded-full bg-emerald-100"></div>
+            <h4 class="text-lg font-bold">My First Backend Project</h4>
+            <p class="mt-2 text-sm text-gray-500">
+              How I built a YouTube clone using Node.js and MongoDB...
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- portfolio -->
+    <div class="lg:flex bg-slate-900">
+      <header
+        class="flex flex-col justify-between px-6 py-12 lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 bg-slate-900/50 border text-slate-200 border-slate-200" 
+      >
+        <div>
+          <h1
+            class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"
+          >
+            Kaushik Mudaliyar
+          </h1>
+          <h2 class="mt-3 text-lg font-medium text-emerald-400 sm:text-xl">
+            MERN Stack Developer
+          </h2>
+          <p class="mt-4 max-w-xs leading-normal text-slate-500">
+            Final year Computer Engineering student passionate about building
+            robust backends and clean user interfaces.
+          </p>
+        </div>
+
+        <nav class="mt-16 hidden lg:block">
+          <ul class="flex flex-col gap-y-4">
+            <li>
+              <a href="#about" class="hover:text-emerald-600 transition"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#project" class="hover:text-emerald-600 transition"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mt-8 flex items-center gap-5">
+          <span
+            class="cursor-pointer text-sm font-bold tracking-widest text-slate-400 uppercase hover:text-emerald-600"
+            >Github</span
+          >
+          <span
+            class="cursor-pointer text-sm font-bold tracking-widest text-slate-400 uppercase hover:text-emerald-600"
+            >LinkedIn</span
+          >
+        </div>
+      </header>
+      <main
+        id="about"
+        class="lg:w-1/2 bg-slate-900 text-slate-400 border border-slate-200 px-8 py-2"
+      >
+        <p>
+          electus vel voluptates deserunt expedita? Asperiores neque iure
+          maiores commodi, natus ea consectetur magnam rerum voluptates ad
+          maxime fugiat cupiditate ullam debitis molestias iusto, at atque
+          dignissimos sit amet. Maxime, eius quisquam obcaecati voluptates nulla
+          impedit voluptas, numquam at magni sint, commodi fugit. Excepturi cum
+          doloribus, sint velit nostrum accusantium nam quis dolor amet quam
+          eaque? Nisi quo iusto magni ab ipsam debitis harum rem. Beatae ea quam
+          mollitia cupiditate, aut explicabo inventore eaque quibusdam sunt
+          tempora voluptates ut doloremque, fugit ipsam numquam autem aliquid
+          iure perspiciatis, excepturi qui non aliquam. Quo deserunt quos
+          sapiente ipsam porro doloremque, sequi cum rem vero molestiae
+          voluptates delectus, illum, consequuntur reprehenderit laudantium
+          libero praesentium. Eius adipisci laborum repudiandae soluta
+          accusantium doloremque recusandae enim obcaecati!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+          perspiciatis quisquam illo officia nostrum, id labore, dolorum magni
+          necessitatibus omnis magnam optio expedita dolore aliquid sapiente ab
+          quae! Est unde tempore commodi earum culpa non, iure possimus cum,
+          dolores ad dignissimos quidem laborum ut amet fugiat harum voluptatum
+          optio ullam! Etium nemo harum voluptates odio est eos voluptas ea et
+          distinctio tempora exercitationem. Obcaecati esse delectus quas ullam
+          velit voluptas amet sint ut autem, totam quidem assumenda quos fuga
+          consequuntur. Deleniti quidem, illo saepe, doloremque magni debitis
+          impedit fuga dolor quis a officiis ipsum reiciendis, hic velit
+          voluptatum? Nemo molestiae commodi, corporis incidunt nihil tempore
+          perspiciatis, esse, corrupti ea quo adipisci illum veritatis laborum
+          perferendis! Qui.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+          consequatur id reprehenderit nobis optio dicta porro aspernatur
+          cupiditate dolorem voluptates mollitia quidem magnam soluta quis
+          dignissimos adipisci vitae velit, hic non ab? Quod quaerat in dolore?
+          Nisi officia rerum cumque hic, ut fugiat doloremque, quos vero, fugit
+          praesentium ducimus deserunt eius veniam temporibus animi unde id
+          minima magni? Earum ea repellat et eum possimus eveniet accusantium
+          dolor ipsam fugiat quae labore adipisci odio necessitatibus cupiditate
+          ab quas in recusandae, dolorum voluptatum. Cumque maxime illum
+          consequuntur neque nihil similique mollitia repellendus? In iure
+          ducimus fuga veniam ad aliquid molestias praesentium aperiam eligendi
+          voluptates corrupti quod placeat minus vitae ea ipsa quidem odio
+          maxime illo quisquam, architecto ex quae libero exercitationem. Odio
+          cupiditate officia officiis hic recusandae voluptas libero culpa,
+          corrupti dolorum vero nobis tempore saepe mollitia rem nemo ad aliquid
+          quae obcaecati unde corporis a reprehenderit perferendis tenetur?
+          Facilis nostrum recusandae earum autem temporibus eos molestiae! Sequi
+          eveniet facere nobis dolore animi, quasi assumenda consequuntur
+          quaerat beatae iure reiciendis, dolorum delectus rem dolores
+          cupiditate minus accusantium necessitatibus esse id illo quisquam?
+          Necessitatibus sunt consequatur officia pariatur perferendis magni
+          illum fugit accusantium natus suscipit quos ducimus, consequuntur nam
+          beatae doloribus nihil saepe?
+        </p>
+        <div
+          id="project"
+          class="group relative flex flex-col gap-4 rounded-xl p-4 transition-all hover:bg-slate-800 md:flex-row"
+        >
+          <div
+            class="h-24 w-full shrink-0 rounded border border-slate-300 bg-slate-800 md:w-40"
+          ></div>
+
+          <div class="flex flex-col gap-y-2">
+            <h3 class="font-bold text-emerald-400 group-hover:text-emerald-800">
+              DevNest Blog App
+            </h3>
+            <p class="text-sm text-slate-500">
+              A full-stack blogging platform built with React, Appwrite, and
+              Tailwind CSS. Features include user authentication and post
+              management.
+            </p>
+
+            <div class="mt-2 flex flex-wrap gap-2">
+              <span
+                class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700"
+                >React</span
+              >
+              <span
+                class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700"
+                >Appwrite</span
+              >
+              <span
+                class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700"
+                >Tailwind</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- <div class="rounded-xl bg-gray-200 px-3 py-6 shadow md:flex md:justify-between">
+      <div>2022-2026</div>
+      <div>Bachelor Of Engineering in Computer Engineering</div>
+    </div> -->
+        <div id="education" class="flex flex-col gap-y-1">
+          <h3 class="text-lg font-bold text-slate-200">
+            Bachelor of Technology
+          </h3>
+          <p class="text-slate-200">Computer Engineering</p>
+          <p class="mt-2 text-sm text-slate-200">CGPA: 8.18</p>
+        </div>
+        <div class="flex flex-col mt-12 items-center gap-3 md:w-3/4 md:mx-auto">
+          <h3 class="text-lg font-bold text-slate-200">Get in touch</h3>
+          <p class="text-slate-400 text-md font-normal">
+            I'm currently looking for Full Stack / Backend opportunities in
+            Ahmedabad & Gandhinagar
+          </p>
+          <button
+            class="bg-emerald-600 text-white px-4 py-2 rounded-md hover:bg-emerald-700"
+          >
+            Say Hello
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <!-- Just for practice -->
+    <!-- <div>
+  <div class="flex flex-wrap gap-2 px-2">
+    <span class="rounded-2xl bg-emerald-200 px-3 py-1 text-xs text-emerald-700">MongoDb</span>
+    <span class="rounded-2xl bg-emerald-200 px-3 py-1 text-xs text-emerald-700">Express.js</span>
+    <span class="rounded-2xl bg-emerald-200 px-3 py-1 text-xs text-emerald-700">Cloudinary</span>
+    <span class="rounded-2xl bg-emerald-200 px-3 py-1 text-xs text-emerald-700">Mongoose</span>
+    <span class="rounded-2xl bg-emerald-200 px-3 py-1 text-xs text-emerald-700">Multer</span>
+  </div>
+</div> -->
+  </body>
+</html>
